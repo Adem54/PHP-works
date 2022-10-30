@@ -26,6 +26,12 @@ echo name;//Adem Erbas
 # Bunun  ozellikle kullanidigi yerler vardir, bunlari ilerde kullanirken gorecegiz
 
 # Constant variable i tekrar tanimlarsak, hata aliriz
-define("name","Zeynep Erbas");
+//define("name","Zeynep Erbas");
 echo name;
+
+
+
+             
+
+
 ?>

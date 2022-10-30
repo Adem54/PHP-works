@@ -15,14 +15,10 @@ query ler yazarken veya belki birkac tane filtreleme vs durumu da olabilir
 iste boyle durumlarda yukardaki 3 fonksiyonu kullanacagiz php de
 */
 
-
-
-
 //Bu fonksiyonlar ile biz nelerid elde edebilyoruz
 //1-fonskiyonumuza kac tane parametre gelmis onu bulabiliyoruz
 //2-GElen parametrelerin listesini dizi olarak alabiliyorum
 //3-Birde bu fonksiyona bir index numarasi vererek o fonkisiyonun o parametresinin de degerine de erisebilyoruz...
-
 
 # BESTPRACTISE...DINAMIK BIR SEKILDE....PARAMETRE OLUSTURUYORUZ...HARIKA.....BESTPRACTISE...
 //FONKSIYONA GELEN PARAMETRELERI BU SEKILDE YONETEBILIYORUZ...

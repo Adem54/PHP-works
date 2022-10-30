@@ -181,11 +181,56 @@ function listCategoriesWithSub($mycategories,$parent=0){
       }
       $html.= "</ul>";
       return $html;
-
    }
 
    echo  "------------------------"."</br></br>";
 
    echo listCategoriesWithSub($categories);
-   
+
+
+   echo "-------------------------"."</br>";
+
+
+
+//RECRUSIEVE FONKSIYHONLARA YINE BESTPRACTSIE KULLANIM...IC ICE OLAN DIZILERDEEN ICERDEKINE ERISMEK ISTEDIGMIZDE
+//O ZAMAN DA BU REUSABLE VE KALICI BIR SEKILDE EN ICERDE ARANAN BIR ELEMNT BILE OLSA BIZ BU SEKILDE ONA ERISEBILIYOURZ...
+//HARIKA BESTPRACTISE KULLANIM...
+$myArr=[
+    "name"=>"Adem",
+    "surname"=>"Erbas",
+    "sports"=>[
+        "swimming"=>"yes",
+        "running"=> "yes",
+        "tennis"=>[
+            "table_tennis"=>"yes",
+            "lawn_tennis"=>"no",
+
+        ]
+    ]
+        ];
+
+
+echo "-------------------". is_array($myArr);
+        function findElement($arr, $element){
+            foreach ($arr as $key=>$item) {
+              echo "forech dongusune girdi"."</br>";
+              echo "element: ". $element. "</br>";
+              echo "key:  ".$key. "</br>";
+              if(is_array($item)==0): echo "item: ".$item. "</br>";
+            else:print_r($item);
+         endif;
+              if($key===$element){        
+               echo "</br>resres"."<h3>parmetre altinda dizi oldugu icin buryaa girdi</h3>" . "</br>";
+                return $item;
+              }elseif(is_array($item)) {
+                    return findElement($item,$element);
+                    //Eger sonuc u bulabiliyor ise de sonucu dondursun geriye...
+              }
+            }           
+        }
+
+        $res= findElement($myArr,"table_tennis");
+        if(is_array($res)): print_r($res);
+      else:echo $res;
+      endif; 
 ?>
