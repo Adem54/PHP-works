@@ -9,10 +9,7 @@
             "type": "php",
             "request": "launch",
             "runtimeArgs": [
-                "-S",
-                "localhost:8000",
-                "-t",
-                "."
+               "-dxdebug.start_with_request=yes"
             ],
             "port": 9000,
             "serverReadyAction": {
