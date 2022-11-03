@@ -116,13 +116,7 @@ BESTPRACTISE....COK HARIKA BESTPRACTISE...BUNLARI COK IYI ANALIZ EDELIM BU SEKIL
 
     DIZI ICINDE OYLE BIR ELEMNT VAR MI DIYE ARAYABILIRZ VE VAR ISE TRUE GELIR YOK ISE FALSE
     O ZAMAN BIZ ARRAY ICINDE BIR ELEMANIN VAR OLUP OLMADINGI KONTROL ETTIMIZ IN_ARRAY METHODUNDAN FAYDALANABILIRIZ
-    <input <?php echo post("interests") && in_array["php", post(interests)] ? "checked" : " "   ?> type="checkbox" name="interesets[]" value="php">PHP
+    <input <?php echo post("interests") && in_array["php", post(interests)] ? "checked" : " "   ?> type="checkbox" name="interesets[]" value="php">PHPET ILE
 
-
-ET ILE
-
-
-
-
-    */
+*/
 ?>
