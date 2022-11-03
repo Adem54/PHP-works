@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+    <!--
+Form 2 tane nitelik alir
+1-Action-Nereye gidecegi belirtilir, belirtilmezse sayfayi yeniler kendi sayfasinda kalir
+2-Method-POST-GET methodlari
+GET:
+POST:
+Hangi methodlarla gonderecegimiz i belirtmemiz gerekiyor
+input
+textarea
+file
+select
+radio
+checkbox
+multiple select
+button
+name-cok onemli input larda attribute olarakki bu name ler uzerinden biz html den hangi elementten geldgini bilecegiz php de
+
+    -->
+   <form action="">
+        <label for="name">Name:</label>
+<input type="text" id="name" name="name">
+<label for="about">About:</label>
+<textarea name="about" id="about" cols="30" rows="10"></textarea>
+<hr>
+Profession:
+
+<!-- 
+    option attribute undeki value ler programlama tarafinda kullanmak icin var olan degerlerdir
+Ancak, option etiketleri arasina dogrudan text olarak yazilan degerler ise kullanicinin gormesi icindir ondan dolayi da 
+genellikle biz value kisminda id kullanirken, etiketler arasina yazdimigz kullaniciya gosterecegmiz text degeri icin meslek ismi
+veya basligini kullaniriz
+-->
+<select name="profession" id="profession">
+    <option value="">--choose profession--</option>
+    <option value="web">Backend developer</option>
+    <option value="">Frontend developer</option>
+    <option value="">Designer</option>
+</select>
+<!--radio buttonun radio buton ozelligini alabilmek icin name isimlerini radio buton olan tum inputlarda ayni olmalidir burasi onemli...-->
+Gender:</br>
+<label>
+<input type="radio" name="gender" value="man">
+Man
+</label>
+<label>
+    <input type="radio" name="gender" value="women">
+    Women
+    </label>    
+
+    <!--  
+        PHP DE BIZ CHECKBOX LARDA VALUE VE NAME LERI COK AKTIF KULLANACAGIZ VE NAME LERIN YANINDA KOSELI PARANTEZ 
+        GELECEK DIZI OLARAK ALINABILMELERI ICIN
+checkbox lar coklu olarak secilecek ve coklu olarak secilecektir 
+Ama radio button da 1 tanesini tiklanabilir ancak, onlarda toggle ozelligi bulunmaz,
+Ancak bir baska radio buttona basinca diger aktif olan pasif o bastigmiz da aktif olur
+Check box taki toggle olmaz ozelligi radio button da yoktur tabi ki
+
+
+
+     -->
+     <label for="">
+        <input type="checkbox" name="interesets[]" value="php">PHP
+     </label>
+     <label for="">
+        <input type="checkbox" name="interesets[]" value="php">PHP
+     </label>
+     <label for="">
+        <input type="checkbox" name="interesets[]" value="php">PHP
+     </label>
+     <label for="">
+        <input type="checkbox" name="interesets[]" value="php">PHP
+     </label>
+     <!--
+        Eger formumuzda type i file olan bir inputumz var ise mutlaka form attribute icerisinde
+        enctype="multipart/form-data" olarak belirtilmelidir
+        Burasi cook onemlidir...bunu mutlaka belirtmemiz gerekiyor....
+     -->
+
+     <input type="file">
+
+     
+     <!--
+        MULTIPLE SELECT NEDIR:
+        Eger bir select option imizda optionlar icerisinden birden fazla option secmek istersek o zaman 
+        select elementine attribute olarak muliple deriz ve size olarak kac belirtirsek o sayi kadar ayni anda secebiliriz
+         2 tane ayni anda secebilirz demektir asagidaski select optionss da   
+        Ayrica bizim birden fazla option gonderecek isek php dosyamiza o zamaan option elementindeki name attributune koseli parantezlerimizi
+        koymamiz gerekir
+     -->
+     <!--
+READONLY-DISABLE
+Eger biz bir degeri kullanici gormesini isteyip ama degistirmesin istersek o zaman inputu readonly yapabilirz 
+ya da eger kullanicii hicbirsekidle dokunamasin dersek o zaman disable yapabiliriz
+FORMU GONDERDIK DIYELIM PHP TARAFINA DAHA SONRA, FORM PHP SAYFASINA GITTI VE GERI DONUSUM BASARILI KAYDEDILDI VEYA BASARISZ VEYA BASKA BIRSEY
+AMA GONDERDIGI INPUT VALUE SINI KULLLANICYA GOSTERMEK ISTENILDIGI ZAMAN INPUT LARIN VALUE ATTRIBUTE LERINDEN FAYDALANILACAK....
+AMA TEXTAREA DA TEXTAREA ETIKETLERI ARASINDA KULLANICI GOREBILECEK
+PLACEHOLDER KULLANABILYORUZ..
+SELECT OPTIONLAR ICERISINDE HERHANGI BIRININ SECILI OLMASNI ISTEDGIMIZ ZAMAN ATTRIBUTE SELECTED VERIRIZ
+RADIO VE CHECKBOX LARDA ISE CHECKED OLMA DURUMU ATTRIBUT LERINA ALDIKLARI CHECKED ILE MUMKUN HALE GELECEKTIR....
+BUNLAR COOOK ONEMLI DIR COK LAZM OLACAK BIZE
+
+HTML FORM ISLMELRINDE VALIDATION ICIN GEREKLI VE DOLDURULMASI GEREKEN INPUT VE DIGER FORM ELEMNTLERINE REQUIRED ATTRIBUTUNU KULLANIRIZ
+
+
+BUTTON-TYPE
+BUTONLARDA TIKLANILDIGI ZAMAN DATA YI ACTION A VERDGIMZ SAYFAYA YONLENDIRMESI ICIN YA BIZ, BUTTON TYPE I SUBMIT YAPARIZ YA DA INPUT OLUSTURUP TYPE I SUBMIT VERIRRIZ BUTTON ILE AYNI SEY OLACAKTIR
+TYPE="SUBMIT":
+TYPE="BUTTON";
+
+       -->
+
+     <select name="profession2" id="profession2" multiple size="2">
+        <option value="">--choose profession--</option>
+        <option value="web">Backend developer</option>
+        <option value="">Frontend developer</option>
+        <option value="">Designer</option>
+    </select>
+</form>
+</body>
+</html>
