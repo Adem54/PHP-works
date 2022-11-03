@@ -72,4 +72,7 @@ print_r($my_php_files);
 0: "index.php"
 }
 */
+
+$my_txt_php_files=glob("*{php,txt}",GLOB_BRACE);//Hem php hem de txt dosyalarini listelemek istersek bu sekilde listeleriz
+//Bir suru dosya icerisinden uzantisi php ve txt olanlari bulup bize getirecek bu sekilde
 ?>
