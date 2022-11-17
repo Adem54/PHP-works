@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adem>
+    <name>Adem</name>
+    <surname>Erbas</surname>
+    <city>Skien </city>
+    <projects>
+            <project id="1">
+                <id>1</id>
+                <title>happening</title>
+            </project>
+             <project id="2">
+                <id>2</id>
+                <title>github-user</title>
+            </project>    
+             <project id="3">
+                <id>3</id>
+                <title>personal-portfolio</title>
+            </project>
+           
+    </projects>
+
+</adem>
+
+<!--
+xml den en ustteki version,encoding tanimlanamasini verirken
+<? ile xml arasinda bosluk olmamalidir
+Burda ana mantigimiz su dur aynen json da yaptigmiz data yi biz xml de y azdik bu sefer
+adem isminde bir objemiz veya arryaimiz var php de 
+icerisinde de name keyi value si Adem
+surname keyi value si Erbas
+websites isminde dizi veya obje var icinde ve o objelerinde 
+key leri var id keyi , title key i var
+seklinde yorumlayabiliriz
+xml de en onemli dikkat edeilmesi gereken nokta 
+mutlaka bir kapsayicii olmaldiir 
+xml de de ayni html de attribute verir gibi xml de de verebiliyoruz
+xml etiketlerinde de ornegin attribute olarak id verebiliyoruz
+
+ -->

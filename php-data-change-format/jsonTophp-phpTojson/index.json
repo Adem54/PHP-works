@@ -1,0 +1,10 @@
+{
+    "name": "Adem",
+    "surname": "Erbas",
+    "city": "Skien",
+    "projects": ["portfolio", "githbu-user"],
+    "kid": {
+        "name": "Zehra",
+        "surname": "Erbas"
+  }
+}
