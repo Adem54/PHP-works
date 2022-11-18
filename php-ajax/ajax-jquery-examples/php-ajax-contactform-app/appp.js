@@ -15,7 +15,7 @@ $(function(){
 
 
 
-    if(checkAllFields | true){
+    if(checkAllFields | true){//Bu check islemini backenddekini gorelim her seferinde ugrasmayalim diye || true koydum yoksa || true olmayacak
        $.post("ajax.php",formData+"&type=contact",(response)=>{
         //Eger responsumuza gelen json data si altinda error gelmis ise o zaman alert ile mesaj verelim yok success olarak gelmis ise o zaman da o success mesaji  i de index.php de html etiketi olusturruuz ve tabi ki bir id atariz ki burdan ona erisip onun icine success mesaji gosterebilelim..ve bu success mesajin gosterecek html etiketimiz normalde gizli olacak ne zaman ki success mesaji gelirse o zaman gosterecegiz
         // console.log(response.error);
