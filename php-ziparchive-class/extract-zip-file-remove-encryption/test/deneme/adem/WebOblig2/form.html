@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="main.css">
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e372cf895d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="logo">
+
+        <img src="images/lager157logo-site.png" alt="logo">
+
+        <div>
+            <a href="#"><i class="fas fa-search"></i>|</a>
+            <a href="#"><i class="fa-solid fa-heart"></i>|</a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i>|</a>
+            <a href="#"><i class="fa-solid fa-right-to-bracket"></i></a>
+        </div>
+    </div>
+
+    <div id="container">
+        <header>
+            <img id="headerPicture"
+                src="images/stunning-barefooted-woman-trendy-fur-coat-dancing-laughing-photoshoot_197531-7073.webp"
+                alt="">
+            <div id="centered">LAGER 157</div>
+        </header>
+
+        <section>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                    <li><a href="aboutus.html"><i class="fas fa-users"></i>AboutUs</a></li>
+                    <li><a href="products.html"><i class="fas fa-eye"></i>Products</a></li>
+                    <li><a href="contact.html"><i class="far fa-address-book"></i>Contact</a></li>
+                    <li><a href="Sale.html"><i class="fa-solid fa-tags"></i>Sale</a></li>
+                    <li><a href="form.html"><i class="fa-solid fa-bag-shopping"></i>Lager Friends</a></li>
+                </ul>
+            </nav>
+
+
+            <main>
+                <div class="formcontainer">
+                    <div class="formheader">
+                        <h2>Registrer Deg</h2>
+                    </div>
+
+                    <form action="/form-processing-script" method="post" class="form" id="form">
+                        <label for="fornavn">Fornavn:</label><br>
+                        <input type="text" id="fornavn" required><br>
+                        <label for="etternavn">Etternavn:</label><br>
+                        <input type="text" id="etternavn" required><br>
+                        <label for="alder">Alder:</label><br>
+                        <input type="number" id="alder" min="0" max="200" required><br>
+                        <label for="mobilnummeret">Mobilnummeret:</label><br>
+                        <input type="text" id="mobilnummeret" pattern="[0-9]{8}" required><br>
+                        <label for="adress">Adresse:</label><br>
+                        <input type="text" id="adress" required><br>
+                        <button class="formbtn" type="submit">Send</button>
+                        <button class="formbtn" type="reset">Reset</button>
+
+                    </form>
+                </div>
+            </main>
+
+
+        </section>
+        <footer>Zeynep Erbas <a href="mailto:zeyneperbas@usn.no">zeyneperbas@usn.no</a> & Derya Johansen <a
+                href="mailto:deryajohansen@usn.no">deryajohansen@usn.no</a><br>
+            Copyright &copy; All rights reserved | 2022 <br>
+            05.10.2022
+        </footer>
+
+    </div>
+
+    <script>
+        const control = form => {
+            let invalids = form.querySelectorAll(':invalid'),
+                button = form.querySelector('button[type="submit"]');
+
+
+
+            if (invalids.length === 0) {
+                button.removeAttribute('disabled');
+            } else {
+                button.setAttribute('disabled');
+            }
+        }
+
+        let forms = document.querySelectorAll('.form')
+        forms.forEach(form => {
+            control(form);
+            form.addEventListener('reset', () => setTimeout(() => control(form), 1));
+            form.addEventListener('keyup', () => control(form));
+            form.addEventListener('change', () => control(form));
+
+        });
+    </script>
+</body>
+
+</html>

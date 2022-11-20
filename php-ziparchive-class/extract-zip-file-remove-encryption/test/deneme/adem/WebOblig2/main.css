@@ -1,0 +1,499 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+    font-family: 'Poppins', sans-serif;
+}
+
+#logo {
+    background-color:white;
+    color: white;
+    height: 55px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-size: 18px;
+    text-align: right;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#logo div i {
+    margin: 5px;
+    color:#0071ce;
+    z-index: 1;
+}
+#logo div i:hover {
+    color: black;
+}
+
+
+font {
+    float: left;
+    letter-spacing: 2px;
+}
+
+#container {
+    width: 80%;
+    margin: auto;
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
+    background-color: black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#headerPicture {
+    width: 100%;
+    height: 250px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: black;
+    object-fit: cover;
+    object-position: 0px 12%;
+}
+
+#centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+section {
+    width: 100%;
+    height: auto;
+    background-color: azure;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+    margin-top: 15px;
+    overflow: auto;
+}
+
+nav {
+    width: 20%;
+    float: left;
+    margin-top: 10px;
+    height: auto;
+    
+}
+
+nav ul {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid #b4b4b4;
+    padding-left: 20px;
+    display: block;
+}
+
+nav li a:hover {
+    color: white;
+    background-color: darkgray;
+
+}
+
+i {
+    margin-right: 10px;
+}
+
+main {
+    float: left;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.content {
+    width: 45%;
+    height: auto;
+    display: inline-block;
+    margin-right: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15);
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.picture {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+h1 {
+    margin: 10px;
+    color: dimgray;
+}
+
+.contentText {
+    margin: 10px;
+    color: black;
+    text-align: center
+}
+
+.btnShop:link {
+    display: block;
+    width: 125px;
+    height: 35px;
+    padding: 8px 20px;
+    background-color: #0071ce;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px auto 15px auto;
+    border-radius: 5px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    line-height: 25px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    margin: 0px 10px;
+    border-radius: 10px;
+}
+
+#aboutuspicture {
+    width: 90%;
+    height: 300px;
+    float: left;
+    border-radius: 10px;
+    margin: 20px;
+    object-fit: cover;
+    object-position: 0px 10%;
+
+}
+
+.prodPicture {
+    width: 45%;
+    height: 300px;
+    border-radius: 8px;
+    margin: 10px;
+}
+
+/*
+Contact page-Table css
+*/
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#customers td,
+#customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #aaaa04;
+    color: white;
+}
+
+#contactlist {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+
+}
+
+#contactlist :hover {
+    background-color: #ddd;
+}
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*Slideshow container */
+.slideshow-container {
+    width: 90%;
+    /*height: auto; */
+    max-height: 500px;
+    position: relative;
+    margin: auto;
+    /*test */
+    overflow: hidden;
+}
+
+/* Next and previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top:50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0 ;
+    border-radius: 3px 0 0 3px; 
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev :hover,
+.next :hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #0c0b0b;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0 ;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px; 
+    width: 15px;
+    margin: 0 2px; 
+    background-color: #0c0b0b;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+ 
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    
+    to {
+        opacity: 1
+    }
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+.formcontainer{
+    background-color:blanchedalmond;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 75%;
+    max-width:100%;
+    overflow: hidden;
+    border-radius:15px;
+}
+
+.formheader {
+    padding: 20px 40px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.formheader h2{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.form{
+    margin-bottom:0.5rem;
+    position: relative;
+    margin-left: 30px;
+    max-height: 600px;
+    
+}
+
+.form label {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size:20px;
+    font-weight:bold
+   
+}
+
+.form input{
+    
+    width: 85%;
+    background: transparent;
+    border-bottom: 10px solid #fff;
+    border: 1px solid #717171;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    max-width:100%;
+    line-height: 20px;
+    font-size:20px;
+}
+
+.form input:hover {
+    background-color: lightskyblue;
+}
+.formbtn {
+    width:30%;
+    padding: 10px;
+    margin:10px 15px 10px 15px;
+    background-color: lightskyblue;
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:10px;
+    cursor: pointer;
+    border-bottom: 1px solid #fff;
+    border: 1px solid #717171;
+    
+}
+
+.formbtn:hover {
+    background-color: whitesmoke;
+}
+
+/* Full Responsive properties with all pages */
+
+@media only screen and (max-width:620px) {
+    nav, main, #headerPicture {
+        width: 100%;
+    }
+    
+
+    /*index side sin main innhold*/
+    .content {
+        display: flex;
+        flex-direction: column;
+        width:100%;
+    }
+
+    /*product side sin main innhold*/
+    .prodPicture{
+        display:flex;
+        flex-direction: column;
+        width:100%;
+        margin-left:5px;
+    }
+
+
+    /*Contact side sin table responsive properties*/
+    table th {
+        display:block;
+    }
+    table tr {
+        border-bottom: 3px solid;
+        display: block;
+        margin-bottom: .625em;
+    }
+    table td {
+        border-bottom: 1px solid;
+        display: block;
+        text-align: center;
+    }
+
+    /*Sale side sin responsive properties for å gjøre slideren unvisible*/
+    .slideshow-container, .dot {
+        display: none;
+    }
+
+    /*Form side sin responsive properties*/
+    .formcontainer {
+        display:block;
+        width:100%;
+    }
+
+    .formheader h2{
+        font-size:20px;
+    }
+    .forminput, .formlabel, .formbtn,.footer {
+        font-size: 10px;
+    }
+
+}
