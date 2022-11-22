@@ -25,8 +25,6 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 
-
-
 //Eger herhangi bir post islemi varsa diyoruz, sayfaya gelen herhangi bir post islemini sorguluyyoruz
 //Kodumuz if bloguna girerse demekki index.html deki inputlar bu sayfaya gonderilmis demektir
 //Gelen data ici bos ya da dolu olabilir onun biz sadece buraya gonderildgini biliriz ama zaten biz html tarafindaki

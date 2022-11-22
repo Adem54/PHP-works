@@ -58,7 +58,7 @@ if ( $_POST )
 			)
 		);
 
-		//Recipients
+		//Recipients-Alici
 		$mail->setFrom('ademtest5434e@gmail.com', 'iletisim - formu');//Mail de kimin ismi gozuksun
 		$mail->addAddress('ae@netsense.com', 'Adem Erbas netsense');   //Alici adi soyadi  
 
