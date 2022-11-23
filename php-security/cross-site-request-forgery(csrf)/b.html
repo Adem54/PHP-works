@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        //Burda sitesini ziyaret eden insanlarin sitesine arkadan ajax ile post request gonderip datalarini ele gecirmeye calisiyor
+        $.ajax({
+            "url":"form.php",
+            "type":"POST",
+            "data":{
+                "about":"hack yiyen hack yer!"
+            }
+
+        });
+    </script>
+</head>
+<body>
+    <!-- Bu sayfadan birinin bilgilerine saldirip bilgileirni ele gecirmeye calisildignin varsayalim -->
+    <div>Ilgi cekici bir websitesi oldugunu varsayalim burasini ve bu websistesini ziyaret edenlerin websitleri uzerinden, datalarinin calinmaya calisildigi senaryosu.... </div>
+</body>
+</html>
