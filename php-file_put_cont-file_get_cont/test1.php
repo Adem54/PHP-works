@@ -10,5 +10,4 @@ echo "<br>";
 //file_get_contents ile de biz bir dosyamizin icerini string olarak aliyoruz 
 $res2=file_get_contents(__DIR__."/test2.php");
 echo $res2;
-
 ?>

@@ -10,12 +10,9 @@
     //onu ajax post ile php dosyasina gonderiyoruz yani server tarafina ki o kullanicinin girdigi degere gore
     //sorgu yapabilsin diye
     $(function(){
-
         //id si flyke olan selectbox i sececegiz
         //sonra bunun degeri degisirse ,change olursa bir callback fonksiyonu calistir ve bunu yakala demis oluyoruz
         //Yani biz, select optionda kullanicinin sectigi option i burda alabilecegiz
-       
-        
        // $(document.body).on('change','#flyke',function(){
         $('#flyke').on('change',function(){
             //Bu select box degistiginde secilen degeri bize verecektir
@@ -27,8 +24,7 @@
                     console.log(response);
                     //Biz burda gonderilen responsu alabildgimize gore burda o zaman islemimizi yapacagiz
                     //biz id ler uzerinden burda select optionlarimiza jquery araciligi ile erisebiliyoruz
-                    $('#kommune').html(response).removeAttr('disabled');//html formatinda gelen degeri kommune id li select icine yazdir
-                  
+                    $('#kommune').html(response).removeAttr('disabled');//html formatinda gelen degeri kommune id li select icine yazdir         
                     
             });
             
