@@ -11,12 +11,14 @@ KULLANICI ADRESTEN DIREK DUSMEYE CALISIRSA BU SAYFAYA ONU HEMEN SESSION DAN KONT
 
 <?php
     session_start();
+  //  print_r($_SESSION);
     if(!isset($_SESSION['user_id'])){
         header('Location: login.php');
         exit;
     } else {
         // Show users the page
-        echo "<h2>WELCOME TO THE HOMEPAGE ".$_SESSION["name"]. "</h2>";
+    
+        echo "<h2>WELCOME TO THE HOMEPAGE ".$_SESSION["username"]. "</h2>";
         
     }
 ?>

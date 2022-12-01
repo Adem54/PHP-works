@@ -28,11 +28,7 @@ if ($stmt = $con->prepare('SELECT id, password FROM users WHERE user_name = ?'))
     $result = $stmt->get_result();
 	// Store the result so we can check if the account exists in the database.
 	// $stmt->store_result();
-  
-   
-    if ($result->num_rows > 0) {
-      
-        
+    if ($result->num_rows > 0) {    
         $row = $result->fetch_assoc();
         $pswFromDb= $row["password"];
        
