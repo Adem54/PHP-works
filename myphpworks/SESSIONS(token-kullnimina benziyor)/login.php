@@ -4,6 +4,7 @@
 
 //Yapacagimiz sey sey kullanicidan alacagmiz kullanici adi ve sifreyi bizde var olan kullanici adi ve sifre ile yani normalde database den gelecek olan kullanici adi ve sifre ile kiyaslayacagiz ve ardindan da eger kullanici adi ve sifre bizde var olan ile ayni ise, o zaman login olmasina izin verip sessin oturumunu baslatip kullanci bilgilerini sesssion da da tutaacagiz..ve dikkat edelim biz 1 tane type i hidden yaparak 1 tane gizli input tutuyoruz o inputa hazir bir value degeri veriyoruz ki , ondan gelecek olan datayi da gorebilmeki icin, value 1 eger, $_POST icine duserse o zaman demekki form submit edilmis demektir, submite tiklanmis yani butona basmis vatandas demektir, name i de submit yapiyoruz ve bu inputu kontrol ediyoruz...eger name i submit olan bir input gonderilmis ise o zaman form submit edilmis demektir
 
+//DINAMIK HATA YONETIMI YAPMA!
 //BESTPRACTISE...HATALARI YONETIRKEN...BIR HATA DETGISKENIMIZE HATANIN TURUNE GORE ATIYORUZ VE O DEGISKEN NERDE TAKILIRSA O HATA MESAJINI ALACAK VE BU SEKILDE DINAMIK BIR SEKILDE HANGI HATAYA TAKIILMIS ISE O HATA MESAJI GELECEK HER ZAMAN...
 if (isset($_POST["submit"])) {
     //print_r($_POST);//Forma datyi girer submit yaparsak burda datayi gorururz {username:"adem54",password:"12345",submit:"1"}

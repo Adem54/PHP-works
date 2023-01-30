@@ -17,11 +17,25 @@ $db=new PDO("mysql:host=localhost;dbname=testdb","root","");
 }
 
 
+$iMapShapeId = $db->query_execute(
+
+
+
+);
+
 
 /*
-Bu sekilde veritabanimz da baglantimiz dogru sekilde olup olmadgini normal su an icinde buludngumz sayfayi localhostta acarsak eger biz olmayan bir veritabanina baaglanmaya calisirsak veya baglanti da hata olursa zaten localhosttaki sayfa da bize hata mesaji doner yok herhangi bir problem yok baglantimzi gerceklesmis ise o zaman localhosttaki sayfamizi actimgizda herhangi bir hata mesaji almayiz
-Eger olmayan bir veritabanina baglanmya calisir isek ve ise tyr-catch ve PDOException sinifi ile hata yi yakalmaz isek asagidaki gibi bir hata yi ekranda goruruz
-Fatal error: Uncaught PDOException: SQLSTATE[HY000] [1049] Unknown database 'testdb2' in C:\wamp64\www\PHP-works\pdodatabase\pdo-database-connection\connect.php:8 Stack trace: #0 C:\wamp64\www\PHP-works\pdodatabase\pdo-database-connection\connect.php(8): PDO->__construct('mysql:host=loca...', 'root', '') #1 C:\wamp64\www\PHP-works\pdodatabase\pdo-database-connection\index.php(4): require_once('C:\\wamp64\\www\\P...') #2 {main} thrown in C:\wamp64\www\PHP-works\pdodatabase\pdo-database-connection\connect.php on line 8
+
+INSERT INTO 'map_layers' (provider_id,name,note,shape_names,shape_types,shape,active) VALUES (:provider_id,:name,:note,:shape_names,:shape_types,ST_GeomFromText(:shape),:active)
+
+
+':provider_id' => int 1
+  ':name' => string 'Rode-netsense-1' (length=15)
+  ':note' => string 'Test rode notat' (length=15)
+  ':shape_names' => string 'point-1,line-1,polygon-1' (length=24)
+  ':shape_types' => string 'POINT,LINESTRING,POLYGON' (length=24)
+  ':shape' => string 'GEOMETRYCOLLECTION(POINT(9.614426032015992 59.16862627290814),LINESTRING(9.618417159030152 59.16518393263604,9.617172614047242 59.16469999760005,9.613224402377318 59.16495296449574,9.61097134680481 59.165876827698696),POLYGON((9.627227056141509 59.16995592467478,9.629285907796628 59.16771956882306,9.622771332410279 59.167341578738245,9.618684358229215 59.1702708926226,9.627227056141509 59.16995592467478)))' (length=409)
+  ':active' => string 'T' (length=1)
 
 */
 

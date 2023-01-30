@@ -15,7 +15,7 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
 
        $data = stripslashes($data);
 
-       $data = htmlspecialchars($data);
+       $data = htmlspecialchars($data,ENT_QUOTES);
 
        return $data;
 

@@ -29,7 +29,6 @@ print_r($myInfo);//( [0] => Adem [1] => Erbas [2] => 34 )
 
 //BURASI COOK ONEMLIDIR...
 $myInfo2=array(
-
 2 => "Zehra",
     3=>"Erbas",
     5=>  9,
@@ -38,7 +37,7 @@ $myInfo2=array(
 );
 
 
-print_r($myInfo2);//Array ( [2] => Zehra [3] => Erbas [5] => 9 ) 
+print_r($myInfo2);//Array ( [2] => Zehra, [3] => Erbas [5] => 9 ) 
 //Dizilerde biz index yerine ayni C# daki dictionary sinifi gibi kullanabiliriz..
 
 

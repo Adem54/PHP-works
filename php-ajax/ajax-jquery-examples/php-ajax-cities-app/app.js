@@ -2,9 +2,6 @@
 //Sayfam hazir oldugunda bende hazirim, hemen calistir, sayfa hazir olunca demek icin bu sekilde kullaniyoruz
 //Yani dom yuklendiginde bende islem yapmak icin hazirim demektir
 
-
-
-
     //Yapilan islem sudur...kullanici select optiondan bir option seciyor
     //Ve biz bu secilen option i kullanicinin sectigi option u bir degiskene atayip 
     //onu ajax post ile php dosyasina gonderiyoruz yani server tarafina ki o kullanicinin girdigi degere gore
@@ -17,7 +14,7 @@
         $('#flyke').on('change',function(){
             //Bu select box degistiginde secilen degeri bize verecektir
         let flykeNo=$(this).val();
-            if(flykeNo){//Eger bir flyke secilmis ise asagidaki islemleri yapacak secilmemis ise de
+            if(flykeNo){//Eger bir flyke secilmis ise asagidaki islemleri yapacaka secilmemis ise de
               
                //Burasi bos degil ise yani kullanici bunu girmis ise benim bu degeri alip php ye gondermem gerekiyor ki onunla dinamik isler yapabilelim...dikkat edelim girilen degeri biz php vermeliyiz ki o onu alsin ve onun ile veritabaninda bir sorgu yapsin ve onu tekrar gondersin...O zaman bunu biz ajax ile gonderebiliriz 
                $.post('ajax.php',{'flykeNo':flykeNo},function(response){

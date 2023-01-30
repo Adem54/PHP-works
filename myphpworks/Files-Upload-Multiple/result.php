@@ -79,8 +79,7 @@ function multi_upload($files){
                     $result["error"][]="File extension is not valid". $files["name"][$index];
                     // print_r($result["error"]);
                 }
-            }
-            
+            }           
             //3.olarak yine hata yoksa burda da boyutu kontrol edelim...
             if(!isset($result["error"])){
                 //boyutlari kontrol edecgiz bu seferde
@@ -107,14 +106,9 @@ function multi_upload($files){
                     }else {
                         $result["error"][]="File is not uploaded! #". $file_name;
                     }
-
                 }
-
              }
-            
-
         }
-
         return $result;
 }
 

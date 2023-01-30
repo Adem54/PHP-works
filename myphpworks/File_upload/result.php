@@ -46,8 +46,8 @@ size: "0"
 
 /*
 DOSYA YUKLEME ASAMALARI ASAGIDAKI GIBIDIR...
-1-Dosya varmi , $_FILES["file"]["error"]===4 ile kontrol ederiz errror 4 ise dosya yoktur hic gelmemistir
-2-Dosya yuklenmis mi ona bakariz...  is_uploaded_file($_FILES["file"]["temp_name"])
+1-Dosya varmi yani dosya gonderilmis mi formdan onu kontrol ederiz , $_FILES["file"]["error"]===4 ile kontrol ederiz errror 4 ise dosya yoktur hic gelmemistir
+2-Eger dosya gonderilmis ise birde dosyanin yuklenme asagmasi vardir...Dosya yuklenmis mi ona bakariz...  is_uploaded_file($_FILES["file"]["temp_name"])
 3. Sonra yuklenmesini istedigimz dosya uzantilarinin mimetypes larindan olusan bir dizi olustruruz ki gelen dosya uzantisi nin type i olusturdugmz array icerisinde var mi onu cek etmek icin yani biz jpeg,png,gif dosyalarini istiyorsak kullanici gidip txt dosyayi yuklerse ona da bir feedbaack verebilme adina 
 $valid_file_extentions=[
         "image/jpeg",
@@ -124,8 +124,7 @@ if($_FILES["file"]["error"]===4){
 
                    $upload=move_uploaded_file($_FILES["file"]["tmp_name"],"./upload/".$name);
                     //move_uploaded_file a parametre olarak temp_name i veririz ve 2.parametre dosyanin yuklenecegiz path i ve istiyorsak da dosyayay yeni bir isim veiririz ya da hic dokunmayiz hangi isimle yuklendi ise o isimle upload edilir istedgimz klasore
-                    
-                    //move_uploaded_file a parametre olarak temp_name i veririz ve 2.parametre dosyanin yuklenecegiz path i ve istiyorsak da dosyayay yeni bir isim veiririz ya da hic dokunmayiz hangi isimle yuklendi ise o isimle upload edilir istedgimz klasore
+                
                     if($upload){
                           //Yuklenmis ise de onu bir resim olarak gosterebiliriz  
                           echo "<h3>File uploaded succesfully</h3>";

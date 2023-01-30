@@ -99,7 +99,7 @@ $values=file("test.txt");//Bir dosya iceriginin her satirini bir eleman olarak k
 //print_r($values);
 //ICERIGIN TAMAMINI STRING OLARAK ALMAK
 $my_content=file_get_contents("test.txt");
-echo ($my_content);//Bu sekilde icerigini tamamina strin olarak da erisebiliriz
+echo ($my_content);//Bu sekilde icerigini tamamina string olarak da erisebiliriz
 
 
 //file_get_contents bir sitenin kaynak kodunu almamizi da saglayabiliyor

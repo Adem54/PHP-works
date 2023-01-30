@@ -9,6 +9,7 @@
 $my_files=scandir(".");//icerisine mevcut dosyamin calistigi dizini vermek istersek sadece "." veririz 
 //print_r($my_files);
 /*
+
 Bize mevcut dizinde var olan klasor ve dosyalari, bir dizi icine atarak getirir
 {
 0: ".",
@@ -19,7 +20,6 @@ Bize mevcut dizinde var olan klasor ve dosyalari, bir dizi icine atarak getirir
 5: "test2",
 6: "test3"
 }
-
 
 */
 //is_dir-icine girilen fonksiyonun dizin olup olmadigini verir
