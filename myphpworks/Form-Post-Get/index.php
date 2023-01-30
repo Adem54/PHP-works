@@ -36,13 +36,13 @@
                 <input type="checkbox" name="interesets[]" value="php">PHP
              </label>
              <label for="">
-                <input type="checkbox" name="interesets[]" value="php">PHP
+                <input type="checkbox" name="interesets[]" value="php">Javascript
              </label>
              <label for="">
-                <input type="checkbox" name="interesets[]" value="php">PHP
+                <input type="checkbox" name="interesets[]" value="php">CSharp
              </label>
              <label for="">
-                <input type="checkbox" name="interesets[]" value="php">PHP
+                <input type="checkbox" name="interesets[]" value="php">Java
              </label>
              <input type="file">
 

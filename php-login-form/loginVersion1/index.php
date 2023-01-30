@@ -165,7 +165,9 @@ opacity: .7;
 
         <h2>LOGIN</h2>
 
-        <!--backend validation kontrolunun yonetimi!...login.php den get-request gonderiliyor -->
+        <!--backend validation kontrolunun yonetimi!...login.php den get-request gonderiliyor 
+        BURASI ONEMLI..GONDERILEN DATA BACKENDDE PHP TARAFINDAN CHECK EDILIYOR VE VALIDATION VE HATA MESAJI VALIDATION HATA MESAJI DA GET-METHODU ILE GONDERILIYOR VE BIZDE ONU BU SEKILDE ALIP FORM DA EKRANA BASABILIYORUZ...ONEMLI...BUNU COK KULLANACAGIZ
+    -->
         <?php if (isset($_GET['error'])) { ?>
 
             <p class="error"><?php echo $_GET['error']; ?></p>

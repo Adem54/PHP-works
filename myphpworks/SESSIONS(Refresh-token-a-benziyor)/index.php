@@ -16,7 +16,8 @@ session_start();
 //Eger time datasi sessin icinde var ise ve time session inin value si eger su anki zamanimizdan buyuk ise
 //o zaman oturmu kapat..temizle ve kullaniciyi da oturum sonlanma sayfasina gonder....
 //o zaman
-echo $_SESSION["time"]."</br>";
+
+// echo $_SESSION["time"]."</br>";
 
 //echo $_SESSION["time"];
 if(isset($_SESSION["time"]) &&  time() > $_SESSION["time"]){
@@ -27,8 +28,10 @@ if(isset($_SESSION["time"]) &&  time() > $_SESSION["time"]){
     //Eger zaman henuz gecmedi ise o zaman burda demekki kullanici session zamani dolmadan baska sayfaya gecmis demekir ki 
     //demekki kullanici islem yapmis o zaman session i tekrar zamanini baslatiriz
     $_SESSION["time"]=time()+10;
+    //10 saniyelik bir zaman dilimi koyoruz 10 saniye boyunce kullanici sayfasini degistirmez ise o zaman kullaniciyi logout yapiyoruz burda....
     //Yani bu session a tarih verme durumu ozellikle kullanici username ve password bilgilierini girince time baslatacagiz ki sonra dan eger kullanici hicbir islem yapmaz ise kontrol edebilelim...
 }
+echo date("H:i:sa",$_SESSION["time"])."</br>";
 
 ?>
 

@@ -16,7 +16,7 @@ if (isset($_POST["submit"])) {
    
     {
         $error = "Please, fill in username or password";
-    } else if ($user_name != $member["user_name"]) //Eger kullanici, bu alanlari doldurdu ise o zaman da neyi kontrol ederiz.. o zaman da
+    } else if ($user_name != $member["user_name"]) //Eger kullanici, bu alanlari doldurdu ise o zaman da neyi kontrol ederiz.. o zaman da username ve password veritabanindaki ile kullanicinn gonderdigi uyusuyor mu, onu check ederiz
     {
         $error = "Your user_name is wrong";
     } else if ($psw != $member["password"]) {
