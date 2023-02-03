@@ -39,8 +39,7 @@ $mysqli -> close();
 /*
 SQL SORGUSU ICINDE KULLANILABILECEK OZEL KARATKTERLER BIR STRING ICINDE TIRNAK ICINDE GONDERILMEYE CALISILIRSA ONU STRING OLARAK ALGILANMASINI SAGLAR YOKSA SQL ONLARI SQL KODU GIBI ALGILAYABILIYOR...CUNKU ONU SISTEME VEYA SQL SORGUSUNA BIR SIZMA GIRSIMI-SQL INJECTION TEHLIKESI OLARAK ALGILAR..... GUVENLIK ICIN KULLANILAN BIR METHODDUR
 The mysqli_real_escape_string() function is an inbuilt function in PHP which is used to escape all special characters for use in an SQL query. It is used before inserting a string in a database, as it removes any special characters that may interfere with the query operations. 
-When simple strings are used, there are chances that special characters like backslashes and apostrophes are included in them (especially when they are getting data directly from a form where such data is entered). These are considered to be part of the query string and interfere with its normal functioning. 
-
+When simple strings are used, there are chances that special characters like backslashes and apostrophes are included in them (especially when they are getting data directly from a form where such data is entered). These are considered to be part of the query string and interfere with its normal functioning
 
 */
 ?>
